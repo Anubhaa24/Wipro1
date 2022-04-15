@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        // let a="Anubha"+5+20+5;
+        // document.getElementById("demo").innerHTML=a;
+        // let a="hi im a 'student'";
+        // let b='"Anubha"';
+        // let c = "Malo";
+        // const name = ["a","b","c","d"];
+        // const student={
+        //     name: "Anubha",
+        //     lname : "Malo",
+        //     grade:"A"
+        // }
+        // const student1={
+        //     name: "Anisha",
+        //     lname : "Das",
+        //     grade:"B"
+        // }
+        // document.getElementById("demo").innerHTML = student.name +"<br>"+ student1.lname +"<br>"+ "is a very good girl having "+student.grade+" grade ";
+
+        // let rev = 0;
+        // let num = 1234;
+        // let lastDigit;
+        // while(num != 0){
+	    // lastDigit = num % 10;
+        // rev = rev * 10 + lastDigit;
+        // num = Math.floor(num/10);
+        // }
+
+        // document.getElementById("demo").innerHTML = rev;
+
+        // function add(a,b,c){
+        //     return a+b+c;
+        // }
+        // document.getElementById("demo").innerHTML = add(2,20,3);
+        // var a = window.prompt("name");
+        // document.write("my name is "+a);
+
+        // const cars = ["Saab", "Volvo", "BMW"];
+        // document.getElementById("demo").innerHTML = cars;
+
+        const food = ["Chocolate", "Icecream", "Candy", "Chips"];
+        document.getElementById("demo").innerHTML = food;
+        food.pop();
+        document.getElementById("demo1").innerHTML = food;
+        food.push("Sweets");
+        document.getElementById("demo2").innerHTML = food;
+
+        document.getElementById("demo1").innerHTML = food;
+        food.shift();
+        document.getElementById("demo2").innerHTML = food;
+
+        document.getElementById("demo1").innerHTML = food;
+        food.unshift("Lemon");
+        document.getElementById("demo2").innerHTML = food;
+
+        const myGirls = ["Cecilie", "Lone"];
+        const myBoys = ["Emil", "Tobias", "Linus"];
+        const myChildren = myGirls.concat(myBoys);
+
+        document.getElementById("demo").innerHTML = myChildren;
+
+    </script>
+</body>
+</html>

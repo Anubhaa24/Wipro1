@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Program for If statement</h1>
+    <p>I want to display something using if else</p>
+    <p id="demo"></p>
+    <script>
+        const minute = new Date().getMinutes();
+        let a;
+
+        if(minute<10){
+            a="hi";
+        }
+        else if(minute>10 && minute<51){
+            a="hello";
+        }
+        else{
+            a="hey";
+        }
+        document.getElementById("demo").innerHTML=a;
+    </script>
+</body>
+</html>
