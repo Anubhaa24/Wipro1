@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    
+
+
+<script>
+let text = "Anubha is a student";
+document.getElementById("demo").innerHTML = text.length;
+
+let str = "Anubha is a student";
+document.getElementById("demo1").innerHTML = str.slice(5,13); 
+
+let str1 = "Anubha is a student";
+document.getElementById("demo2").innerHTML = str1.substring(2,9);
+
+let str2 = "Anubha is a student";
+document.getElementById("demo4").innerHTML = str2.indexOf("bha");
+
+let text1 = "Anubha";
+let text2 = "Malo";
+let text3 = text1.concat(" ",text2);
+document.getElementById("demo3").innerHTML = text3;
+
+let text4 = "rain in spain";
+let result = text4.match(/ain/g);
+ 
+document.getElementById("demo5").innerHTML = result;
+</script>
+</body>
+</html>
